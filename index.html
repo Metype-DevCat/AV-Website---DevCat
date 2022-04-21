@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="sheet.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-      $(document).ready(function(){
-        populateHeader("index.html")
-      });
-    </script>
-  </head>
-  <main>
-   <body>
-         <h1 class="center">Adamsville A/V Production</h1>
-
-     <div class="justify">
-  <h4>
-    Here at Adamsville High School, our A/V class works on many projects to help our students learn more about technology. We work with our students with different types of projects to expand their knowledge on audio and visual technology. Many of our students have shown great improvement with technology and explored a new career opportunity. 
-<br></br>
-Our class works with cameras, microphones, speakers, and much more. The students are allowed to be creative and use the different technology we provide to create their own projects.   
-  </h4>
-     </div>
-     <div class="center">
-<h5>
-When you first join/take A/V I, you get an introduction to what audio really is and the point of making videos.
-<br></br>
-What you do in A/V II, you start to learn how to use editing websites like adobe and many more to help further your education in video making. 
-<br></br>
-When your finally a senior/third year in A/V III, you build upon the concepts from A/V I and II to start making more professional videos.
-</h5>
-     </div>
-     <ul>
-      <h4 class="title">Here's some projects the A/V class has done in the past</h4>
-      <li><p class="description">1</p><a class="content" href="audio.html#music-videos">Music Videos</a></li>
-      <li><p class="description">2</p><a class="content" href="video.html#benny-hill">Benny Hill Chase Scene</a></li>
-      <li><p class="description">3</p><a href="summary.html#the-door-scene" class="content">The Door Scene</a></li>
-      <li><p class="description">4</p><a href="story-writing.html#narrator" class="content">The Rude Narrator</a></li>
-    </ul>
-</body>
-    
-  </main>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="sheet.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body class="bg-dark-light text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/images/AVBrand.png" alt="" width="32" height="32">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active red-hover rounded ml-1" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-hover rounded ml-1" href="summary.html">Summary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-hover rounded ml-1" href="audio.html">Audio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-hover rounded ml-1" href="video.html">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-hover rounded ml-1" href="story-writing.html">Story Writing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-hover rounded ml-1" href="technology.html">Technology</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container bg-dark mt-4 mb-4 pb-3 pt-3 rounded">
+            <h1 class="center">Adamsville A/V Production</h1>
+            <hr>
+            <div class="justify">
+                <p>
+                    Here at Adamsville High School, our A/V class works on many projects to help our students learn more about technology. We work with our students with different types of projects to expand their knowledge on audio and visual technology. Many of our students have shown great improvement with technology and explored a new career opportunity. 
+                    <br></br>
+                    Our class works with cameras, microphones, speakers, and much more. The students are allowed to be creative and use the different technology we provide to create their own projects.   
+                </p>
+            </div>
+            <div class="justify">
+                <p>
+                    When you first join/take A/V I, you get an introduction to what audio really is and the point of making videos.
+                    <br></br>
+                    What you do in A/V II, you start to learn how to use editing websites like adobe and many more to help further your education in video making. 
+                    <br></br>
+                    When you're finally a senior/third year in A/V III, you build upon the concepts from A/V I and II to start making more professional videos.
+                </p>
+            </div>
+            <div class="flex-together">
+                <div class="center v-center bg-dark-light outlined-text">
+                    <h4>Here's some</br>of what you</br>may expect</br>to do</br>in A/V!</h4>
+                </div>
+                <ol class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark-light text-light hover-overlay">
+                        <a href="video.html#benny-hill" class="list-group-item-action list-group-item bg-dark text-light red-hover">
+                            <div class="fw-bold">Benny Hill-style Chase Scenes</div>
+                            From Comedy Videos
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark-light text-light">
+                        <a href="audio.html#music-videos" class="list-group-item-action list-group-item bg-dark text-light red-hover">
+                            <div class="fw-bold">Music Videos</div>
+                            to Short, Fun videos
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark-light text-light">
+                        <a href="summary.html#the-door-scene" class="list-group-item-action list-group-item bg-dark text-light red-hover">
+                            <div class="fw-bold">The Door Scene</div>
+                            to Simple follow-the-instructions Videos
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark-light text-light">
+                        <a href="story-writing.html#narrator" class="list-group-item-action list-group-item bg-dark text-light red-hover">
+                            <div class="fw-bold">The Rude Narrator</div>
+                            to Written and Shot Entirely by the Class
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
